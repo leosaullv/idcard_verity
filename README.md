@@ -22,7 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    idcard = IdcardVerity::Idcard.new(340207571421315) 
+    idcard.valid?
 
 ## Development
 
