@@ -35,7 +35,7 @@ module IdcardVerity
   	end
 
   	def address
-  	  idcard.slice(0..5).to_i
+  	  idcard.slice(0..5)
   	end
 
   	def others
@@ -73,7 +73,7 @@ module IdcardVerity
   	end
 
   	def check_geoinfo
-  	  geoinfo.has_key?(address)
+  	  address.length == 6
   	end
 
   	def sysbit
